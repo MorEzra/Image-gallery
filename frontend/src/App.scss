@@ -1,0 +1,87 @@
+body {
+  background: #282c34;
+}
+
+/* GALLERY */
+.galleryContainer {
+  width: 80vw;
+  margin: 0 auto 20px auto;
+  display: flex;
+  flex-wrap: wrap;
+
+  /* gallery image zoom in effect */
+  & .zoomInContainer {
+    width: 33%;
+    max-height: 300px;
+    overflow: hidden;
+
+    figure img {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+      -webkit-transition: .3s ease-in-out;
+      transition: .3s ease-in-out;
+      object-fit: cover;
+    }
+
+    figure:hover img {
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+      cursor: pointer;
+    }
+
+    figure {
+      overflow: hidden;
+      margin: 10px 5px;
+    }
+  }
+
+  @media screen and (max-width: 1000px) {
+    .zoomInContainer {
+      width: 50%;
+      max-height: 200px;
+    }
+  }
+}
+
+/* gallery preloader */
+.preloader {
+  display: flex;
+  flex-direction: column;
+  backdrop-filter: blur(5px);
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+/* NAV */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 50px;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background: #282c34;
+  box-shadow: #282c34 3px 3px 10px;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .nav {
+    padding: 10px 2px;
+    justify-content: space-evenly;
+  }
+}
+
+// FOOTER
+.footer {
+  background-color: #1b1e23;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
