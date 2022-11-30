@@ -2,7 +2,7 @@
 
 ### `npm install`
 
-Installes all the used modules.\
+Installs all the used modules.\
 Please run the command both on 'frontend' and 'backend' directories.
 
 
