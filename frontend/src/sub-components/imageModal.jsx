@@ -1,5 +1,5 @@
 import React from 'react';
-import { useTheme, Dialog, Typography, Box, Card, CardHeader, CardMedia, CardContent, CardActions, IconButton } from '@mui/material';
+import { useTheme, Dialog, Typography, Box, Card, CardHeader, CardMedia, CardActions, IconButton } from '@mui/material';
 import { makeStyles } from "@mui/styles";
 import CloseIcon from '@mui/icons-material/Close';
 import VisibilityIcon from '@mui/icons-material/Visibility';
