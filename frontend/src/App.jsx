@@ -1,8 +1,8 @@
-import './App.scss';
 import React from 'react';
+import { connect } from 'react-redux';
+import './App.scss';
 import { useTheme, Box, Snackbar, Alert } from '@mui/material';
 import Nav from './components/nav';
-import { connect } from 'react-redux';
 import Gallery from './components/gallery';
 import Footer from './sub-components/footer';
 
